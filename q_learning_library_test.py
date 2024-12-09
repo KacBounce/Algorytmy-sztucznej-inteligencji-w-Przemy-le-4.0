@@ -4,7 +4,7 @@ from stable_baselines3 import DQN
 
 env = gymnasium.make("FrozenLake-v1", is_slippery=False, render_mode="human")
 
-model = DQN.load("dqn_frozenlake")
+model = DQN.load("dqn_frozenlake_4x4")
 print("Model loaded successfully!")
 
 state, _ = env.reset()
